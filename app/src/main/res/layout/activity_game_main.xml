@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_game_main_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center_vertical">
+
+        <LinearLayout
+            android:id="@+id/id_score"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/score_height"
+            android:layout_marginTop="@dimen/score_top"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/id_score_thousand_place"
+                android:layout_width="@dimen/score_width"
+                android:layout_height="@dimen/score_height"
+                android:layout_margin="@dimen/score_margin"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/id_score_hundred_place"
+                android:layout_width="@dimen/score_width"
+                android:layout_height="@dimen/score_height"
+                android:layout_margin="@dimen/score_margin"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/id_score_decade_place"
+                android:layout_width="@dimen/score_width"
+                android:layout_height="@dimen/score_height"
+                android:layout_margin="@dimen/score_margin"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/id_score_unit_place"
+                android:layout_width="@dimen/score_width"
+                android:layout_height="@dimen/score_height"
+                android:layout_margin="@dimen/score_margin" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_button_group"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/button_bottom">
+            <Button
+                android:id="@+id/id_button_replay"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:background="@mipmap/replay"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/id_button_back"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="@dimen/button_width"
+                android:background="@mipmap/back"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/id_city"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/background_day" />
+
+        <ImageView
+            android:id="@+id/id_city_next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/background_day_next" />
+
+        <ImageView
+            android:id="@+id/id_bird"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="80dp"
+            android:src="@mipmap/bluebird_midflap" />
+
+        <ImageView
+            android:id="@+id/id_pipe_1"
+            android:layout_width="@dimen/pipe_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/ground_height"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/pipe_green_1_6" />
+
+
+        <ImageView
+            android:id="@+id/id_pipe_2"
+            android:layout_width="@dimen/pipe_width"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/id_pipe_1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/ground_height"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/pipe_green_2_5" />
+
+
+        <ImageView
+            android:id="@+id/id_pipe_3"
+            android:layout_width="@dimen/pipe_width"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/id_pipe_2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/ground_height"
+            android:scaleType="fitXY"
+            app:srcCompat="@mipmap/pipe_green_3_4" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ground_height"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/id_ground"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ground_height"
+            android:layout_alignParentBottom="true"
+            android:background="@mipmap/base" />
+
+        <ImageView
+            android:id="@+id/id_ground_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ground_height"
+            android:layout_toRightOf="@+id/id_ground"
+            android:background="@mipmap/base_next"
+            android:layout_alignStart="@+id/id_ground" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

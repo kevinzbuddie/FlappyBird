@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0099cc">
+
+    <LinearLayout
+        android:id="@+id/id_start_game_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:background="@mipmap/background_day"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/id_get_ready_image"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/start_logo_width"
+            android:layout_height="@dimen/start_logo_height"
+            android:src="@mipmap/message" />
+
+        <LinearLayout
+            android:id="@+id/id_bird_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/id_blue_bird"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_margin="@dimen/icon_margin"
+                android:src="@mipmap/bluebird_midflap" />
+            <ImageView
+                android:id="@+id/id_red_bird"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_margin="@dimen/icon_margin"
+                android:src="@mipmap/redbird_upflap" />
+            <ImageView
+                android:id="@+id/id_yellow_bird"
+                android:layout_gravity="center"
+                android:layout_width="@dimen/icon_width"
+                android:layout_height="@dimen/icon_height"
+                android:layout_margin="@dimen/icon_margin"
+                android:src="@mipmap/yellowbird_downflap" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

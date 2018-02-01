@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FlappyBird</string>
+    <string name="welcome_content">Welcome\nLoliman\'s World</string>
+    <string name="start_game">Start Game</string>
+    <string name="title_activity_start_game">StartGameActivity</string>
+    <string name="title_activity_game_main">GameMainActivity</string>
+</resources>
